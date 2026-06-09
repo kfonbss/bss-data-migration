@@ -1,4 +1,3 @@
-````md
 # MySQL to PostgreSQL Migration
 
 A Python-based migration project to move data from one MySQL source database into multiple PostgreSQL target databases.
@@ -13,7 +12,6 @@ The project supports:
 - Environment-specific database names
 - Logs separated by environment and state
 
-```
 
 Database names are configured manually per environment and state.
 No database naming pattern is assumed.
@@ -97,7 +95,4 @@ prod
 * Keep database names environment-specific.
 * Validate row counts after every table migration.
 * Review logs after every migration run.
-
-```
-```
 
