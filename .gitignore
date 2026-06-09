@@ -1,0 +1,53 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+
+# Virtual environment
+venv/
+.env
+
+# Logs
+logs/*
+!logs/.gitkeep
+
+# Output files
+output/reports/*
+!output/reports/.gitkeep
+
+output/failed_rows/*
+!output/failed_rows/.gitkeep
+
+# OS/editor
+.DS_Store
+.vscode/
+.idea/# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+
+# Virtual environment
+venv/
+.env
+
+# Logs
+logs/*
+!logs/.gitkeep
+
+# Output files
+output/reports/*
+!output/reports/.gitkeep
+
+output/failed_rows/*
+!output/failed_rows/.gitkeep
+
+# OS/editor
+.DS_Store
+.vscode/
+.idea/
