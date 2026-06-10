@@ -1,0 +1,33 @@
+app:
+  name: bss-data-migration
+  default_env: dev
+  default_state: ld
+
+connections:
+  mysql:
+    host_env: MYSQL_HOST
+    port_env: MYSQL_PORT
+    user_env: MYSQL_USER
+    password_env: MYSQL_PASSWORD
+    default_port: 3306
+    driver: mysql+pymysql
+
+  postgres:
+    host_env: POSTGRES_HOST
+    port_env: POSTGRES_PORT
+    user_env: POSTGRES_USER
+    password_env: POSTGRES_PASSWORD
+    default_port: 5432
+    driver: postgresql+psycopg2
+
+migration:
+  batch_size: 5000
+  truncate_before_load: false
+  continue_on_error: false
+  validate_counts: true
+  schema: public
+
+paths:
+  table_mapping: configs/mappings/table_mapping.yaml
+  logs_dir: logs
+  reports_dir: reports

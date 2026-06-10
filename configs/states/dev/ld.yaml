@@ -1,0 +1,17 @@
+state: ld
+environment: dev
+
+source:
+  mysql:
+    database: ld1
+
+targets:
+  postgres:
+    mapping: pg_bss_mapping_dev
+    inventory: pg_bss_inventory_dev
+    subscriber: pg_bss_subscriber_dev
+
+enabled_modules:
+  - mapping
+  - inventory
+  - subscriber

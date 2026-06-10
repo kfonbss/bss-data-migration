@@ -1,0 +1,87 @@
+modules:
+  mapping:
+    target_database_key: mapping
+    tables:
+      - source: partneraccount
+        target: partneraccount
+        primary_key: partnerid
+      - source: partnerdetail
+        target: partnerdetail
+        primary_key: partnerid
+      - source: partnergroup
+        target: partnergroup
+        primary_key: groupid
+      - source: partnergstdetail
+        target: partnergstdetail
+        primary_key: id
+      - source: partneronlinerecharge
+        target: partneronlinerecharge
+        primary_key: id
+      - source: partnerreciept
+        target: partnerreciept
+        primary_key: receiptid
+      - source: package_map
+        target: package_map
+        primary_key: id
+      - source: users
+        target: users
+        primary_key: id
+
+  inventory:
+    target_database_key: inventory
+    tables:
+      - source: inv_device_details
+        target: inv_device_details
+        primary_key: deviceid
+      - source: inv_device_cat
+        target: inv_device_cat
+        primary_key: catid
+      - source: inv_device_make
+        target: inv_device_make
+        primary_key: makeid
+      - source: inv_device_model
+        target: inv_device_model
+        primary_key: modelid
+      - source: inv_device_status
+        target: inv_device_status
+        primary_key: statusid
+      - source: inv_device_type
+        target: inv_device_type
+        primary_key: typeid
+      - source: inv_device_vendor
+        target: inv_device_vendor
+        primary_key: vendorid
+      - source: ont_device_providers
+        target: ont_device_providers
+        primary_key: provider_id
+
+  subscriber:
+    target_database_key: subscriber
+    tables:
+      - source: caf_details
+        target: caf_details
+        primary_key: caf_id
+      - source: package
+        target: package
+        primary_key: packageid
+      - source: subscriberaccount
+        target: subscriberaccount
+        primary_key: accountid
+      - source: subscriberdetail
+        target: subscriberdetail
+        primary_key: subscriberid
+      - source: subscribergstdetail
+        target: subscribergstdetail
+        primary_key: id
+      - source: subscriberprofile
+        target: subscriberprofile
+        primary_key: subscriberprofileid
+      - source: subscription
+        target: subscription
+        primary_key: subscriptionid
+
+defaults:
+  column_mapping: auto
+  transforms: []
+  where: null
+  order_by: null
